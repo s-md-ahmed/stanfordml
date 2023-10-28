@@ -17,8 +17,8 @@ Z = zeros(size(X, 1), K);
 %                    x = X(i, :)';
 %                    projection_k = x' * U(:, k);
 %
-U=U(:,1:K)
-Z=X*U;
+U=U(:,1:K)%we r selecting only those k columns of U 
+Z=X*U;%then we r multiplying with X to project the data into the lower dimensional space
 
 
 % =============================================================
